@@ -184,47 +184,23 @@ src/ - contains following files:
 
 
     - preprocessing.py:
-
-    
       - load raw retail CSV
-
-      
       - clean transactions
-
-      
       - build RFM table
 
       
     - clustering.py:
-
-    
       - log transform _ scale RFM
-
-      
       - evaluate KMeans across k
-
-      
       - fit final customer segments
-
-      
       - add PCA coordinates
-
-      
       - build a cluster profile table
 
       
     -utils.py:
-
-    
       - revenue by segment
-
-      
       - revenue by share %
-
-      
       - revenue uplift simulation
-
-      
       - save dataframe/simple chart helpers
 
       
