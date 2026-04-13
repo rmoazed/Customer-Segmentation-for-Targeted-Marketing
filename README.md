@@ -29,20 +29,20 @@ It contains transaction-level data, customer IDs, timestamps, product informatio
 ### Data Preparation
 
 
-### Data Cleaning
+#### Data Cleaning
 
 
 Data cleaning involved removing rows with missing Customer IDs, removing cancelled transactions (InvoiceNo starting with "C"), filtering negative quantities (returns), and creating a column TotalPrice = Quantity * UnitPrice
 
 
-### Feature Engineering
+#### Feature Engineering
 
 
 
 The concept of RFM is extremely important to understanding customer behavior and their subsequent segmentation. Recency refers to how many days since last purchase, and is a measure of how recently a customer engaged. Frequency is a measure of number of transactions, and represents customer engagement level. Monetary is total spend, and is a metric to evaluate customer value. These features were aggregated to the customer level, i.e. one observation per Customer ID. 
 
 
-### Scaling
+#### Scaling
 
 
 Features were standardized using StandardScaler, as KMeans is a distance-based method of clustering, and scaling prevents one feature from dominating. 
