@@ -4,6 +4,17 @@
 This project used KMeans clustering and the UCI Online Retail dataset to cluster customers based on different RFM characteristic and then developed a means of simulating revenue as well as providing A/B testing ideas.
 
 
+## Live App
+
+
+[Click here to explore the interactive app](https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/)
+
+
+**Dashboard Preview:**
+
+![Dashboard Preview](images/dashboard_preview.png)
+
+
 ## Overview
 
 
@@ -211,6 +222,8 @@ dashboard.py - file for creating Streamlit app
 
 
 requirements.txt
+
+
 rfm_with_segments.csv - necessary for dashboard configuration
 
 
