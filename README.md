@@ -168,10 +168,13 @@ The hypothesis is that a personalized retention campaign will re-incentivize cus
 
 An interactive dashboard was developed using Streamlit to give users the ability to interact with the project data, outcomes, and simulations. It features customer segment distribution, revenue contribution per segment, PCA visualization of segments, and most importantly a revenue impact simulator that allows users to test different retention rates of different segments and observe the subsequent impact on revenue. 
 
-View the dashboard here: 
+View the dashboard here: https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/
 
 
 ## Repository Structure
+
+
+.streamlit/ - contains .toml file for dashboard styling
 
 
 images/
@@ -208,6 +211,7 @@ dashboard.py - file for creating Streamlit app
 
 
 requirements.txt
+rfm_with_segments.csv - necessary for dashboard configuration
 
 
 ## How to Run
