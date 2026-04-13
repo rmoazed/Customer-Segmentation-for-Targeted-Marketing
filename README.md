@@ -1,10 +1,10 @@
 # Customer-Segmentation-for-Targeted-Marketing
 
 
-This project used KMeans clustering and the UCI Online Retail dataset to cluster customers based on different RFM characteristic and then developed a means of simulating revenue as well as providing A/B testing ideas.
+This project used KMeans clustering and the UCI Online Retail dataset to cluster customers based on different RFM characteristics and then developed a means of simulating revenue as well as providing A/B testing ideas.
 
 
-## Live App
+## Live Dashboard
 
 
 [Click here to explore the interactive app](https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/)
@@ -21,10 +21,12 @@ This project used KMeans clustering and the UCI Online Retail dataset to cluster
 This project addressed the need for businesses to understand customer behavior so as to optimally strategize for hitting revenue targets. Not all customers contribute to revenue the same, and identifying and segmenting them based on their contributions and behavior can be extremely useful in the implementation of targeted marketing.
 
 
-The goal of the project was to segment customers based on their purchasing behavior and identify high-value and at risks groups, as well as other groups still worth considering. It used an RFM framework to reveal recency, frequency, and monetary traits as they pertained to customers and grouped them into four clusters using KMeans.
+The goal of the project was to segment customers based on their purchasing behavior and identify high-value and at-risk groups, as well as other groups still worth considering. It used an RFM framework to reveal recency, frequency, and monetary traits as they pertained to customers and grouped them into four clusters using KMeans.
 
 
-This lead to actionable and easily interpretable customer segments, revenue insights including simulation increased retention rate of certain segments of customers, and development of strategic marketing recommendations to boost customer retention and engagement. An interactive dashboard was also deployed, allowing users to interact with the data, simulate revenue outcomes depending on level of increased retention dependent on customer segment, visualize the clusters in a two-dimensional format, and more.
+This led to actionable and easily interpretable customer segments, revenue insights including simulation increased retention rate of certain segments of customers, and development of strategic marketing recommendations to boost customer retention and engagement. An interactive dashboard was also deployed, allowing users to interact with the data, simulate revenue outcomes depending on level of increased retention dependent on customer segment, visualize the clusters in a two-dimensional format, and more.
+
+This project highlights how unsupervised learning can directly translate to actionable business strategy.
 
 
 
@@ -87,7 +89,7 @@ These customers were previously high spenders who had dropped off with a current
 These customers had recent purchase activity, but low frequency and a relatively low contribution to total revenue. They were early-stage customers and new shoppers at the retail establishment.
 
 
-### Inactive customers.
+### Inactive Customers
 
 
 These customers had high recency, meaning they had not made a purchase for a long time, had low frequency and thus very few transactions, and low monetary values, contributing the least out of the four segments to total revenue. 
@@ -118,7 +120,7 @@ These customers had high recency, meaning they had not made a purchase for a lon
   ## Revenue Impact Simulation
 
 
-For the revenue impact simulation, the revenue effect of improving performance for one of the most important segments, At-Risk Valuable customers, was observed. This segment represented a meaningful share of revenue contribution. However, they were slowly moving towards inactivity, and as their loss would have a significant negative impact on revenue, improving retention would not only mitigate this negative outcome but also increase revenue from its current baseline. An assumption was made that it would be possible to generate a 10% uplift of these hypothetical At-Risk Valuable customers. Increased revenue was modeled as $segment revenue x assumed uplift rate$, and the simulated 10% uplift showed that even relatively small improvements in retention can have a meaningful and positive impact on revenue, supporting the necessity to strategize manners for boosting retention and engagement of these customers. 
+For the revenue impact simulation, the revenue effect of improving performance for one of the most important segments, At-Risk Valuable Customers, was observed. This segment represented a meaningful share of revenue contribution. However, they were slowly moving towards inactivity, and as their loss would have a significant negative impact on revenue, improving retention would not only mitigate this negative outcome but also increase revenue from its current baseline. An assumption was made that it would be possible to generate a 10% uplift of these hypothetical At-Risk Valuable customers. Increased revenue was modeled as segment revenue x assumed uplift rate, and the simulated 10% uplift showed that even relatively small improvements in retention can have a meaningful and positive impact on revenue, supporting the necessity to strategize manners for boosting retention and engagement of these customers. 
 
 
   ## A/B Testing Strategy
@@ -204,7 +206,7 @@ src/ - contains following files:
 
       
     - clustering.py:
-      - log transform _ scale RFM
+      - log transform + scale RFM
       - evaluate KMeans across k
       - fit final customer segments
       - add PCA coordinates
@@ -231,6 +233,8 @@ rfm_with_segments.csv - necessary for dashboard configuration
 
 
 pip install -r requirements.txt
+
+
 streamlit run dashboard.py
 
 
