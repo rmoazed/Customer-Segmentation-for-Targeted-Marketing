@@ -1,10 +1,13 @@
-# Customer-Segmentation-for-Targeted-Marketing
+# Customer Segmentation for Targeted Marketing
 
 
 This project used KMeans clustering and the UCI Online Retail dataset to cluster customers based on different RFM characteristics and then developed a means of simulating revenue as well as providing A/B testing ideas.
 
 
 ## Live Dashboard
+
+
+If app has not been recently accessed may require up to 30 seconds to load or pressing of reactivation button.
 
 
 [Click here to explore the interactive app](https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/)
@@ -181,7 +184,10 @@ The hypothesis is that a personalized retention campaign will re-incentivize cus
 
 An interactive dashboard was developed using Streamlit to give users the ability to interact with the project data, outcomes, and simulations. It features customer segment distribution, revenue contribution per segment, PCA visualization of segments, and most importantly a revenue impact simulator that allows users to test different retention rates of different segments and observe the subsequent impact on revenue. 
 
-View the dashboard here: https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/
+[View the dashboard here](https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/)
+
+
+If app has not been recently accessed may require up to 30 seconds to load or pressing of reactivation button.
 
 
 ## Repository Structure
